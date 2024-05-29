@@ -1,13 +1,21 @@
-﻿<Properties StartupConfiguration="{F5593E1A-BE18-7868-DEFE-A4354997C3B5}|">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{8A7C9737-9D2D-6C72-55AA-401635082F45}|">
+  <MonoDevelop.Ide.ItemProperties.AltTester.AltTesterUnitySDK PreferredExecutionTarget="c7dc540b-494e-4c02-8ff5-01ca6f8ae562" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManagerScript.cs">
+    <Files>
+      <File FileName="Packages/manifest.json" Line="40" Column="41" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="20" Column="21" />
+      <File FileName="Assets/Scripts/SceneManager.cs" Line="13" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2048PracticeProject" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="AltTester" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="SceneManagerScript.cs" selected="True" />
+              </Node>
               <Node name="TextMesh Pro" expanded="True" />
-              <Node name="Tiles" selected="True" />
             </Node>
           </Node>
         </State>
@@ -16,7 +24,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c7dc540b-494e-4c02-8ff5-01ca6f8ae562" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
