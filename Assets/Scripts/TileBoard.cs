@@ -9,7 +9,7 @@ public class TileBoard : MonoBehaviour
     private TileGrid grid;
     public TileState[] tileStates;
     public Tile tilePrefab;
-    private List<Tile> tiles;
+    public List<Tile> tiles;
     private bool waiting;
 
 
@@ -73,7 +73,7 @@ public class TileBoard : MonoBehaviour
                 TileCell cell = grid.GetCell(x, y);
                 if (cell.occupied)
                 {
-                    changed |=MoveTile(cell.tile, direction);
+                    changed |= MoveTile(cell.tile, direction);
                 }
             }
 

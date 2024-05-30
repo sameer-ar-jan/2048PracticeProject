@@ -3694,6 +3694,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5396d0fe96c144a0bfd2c859c2ac75c, type: 2}
   - {fileID: 11400000, guid: d69aa221062ff4304a31a68cd738540f, type: 2}
   tilePrefab: {fileID: 1209154015988468934, guid: 78c920a04355f4945a12c266bb8937b3, type: 3}
+  tiles: []
 --- !u!1 &2128472048
 GameObject:
   m_ObjectHideFlags: 0

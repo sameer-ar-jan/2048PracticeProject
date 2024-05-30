@@ -1,23 +1,23 @@
 ﻿<Properties StartupConfiguration="{8A7C9737-9D2D-6C72-55AA-401635082F45}|">
-  <MonoDevelop.Ide.ItemProperties.AltTester.AltTesterUnitySDK PreferredExecutionTarget="c7dc540b-494e-4c02-8ff5-01ca6f8ae562" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneManagerScript.cs">
+  <MonoDevelop.Ide.ItemProperties.AltTester.AltTesterUnitySDK PreferredExecutionTarget="dd0db37a-dbd0-4664-b00c-e633d96a7666" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AltTester/Editor/MyFirstTest.cs">
     <Files>
-      <File FileName="Packages/manifest.json" Line="40" Column="41" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="20" Column="21" />
-      <File FileName="Assets/Scripts/SceneManager.cs" Line="13" Column="1" />
+      <File FileName="Packages/manifest.json" Line="21" Column="52" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/TileBoard.cs" Line="62" Column="10" />
+      <File FileName="Assets/Scripts/TileGrid.cs" Line="32" Column="46" />
+      <File FileName="Assets/Scripts/Tile.cs" Line="22" Column="16" />
+      <File FileName="Assets/Scripts/TileCell.cs" Line="10" Column="17" />
+      <File FileName="Assets/Scripts/TileRow.cs" Line="10" Column="53" />
+      <File FileName="Assets/Tests/Editor/TileBoardEditModeTests.cs" Line="13" Column="15" />
+      <File FileName="Assets/Tests/PlayMode/TileBoardPlayModeTests.cs" Line="16" Column="15" />
+      <File FileName="Assets/Tests/PlayMode/BoardTests.cs" Line="13" Column="3" />
+      <File FileName="Assets/AltTester/Editor/MyFirstTest.cs" Line="22" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="2048PracticeProject" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="AltTester" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="SceneManagerScript.cs" selected="True" />
-              </Node>
-              <Node name="TextMesh Pro" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="2048PracticeProject" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
