@@ -21,7 +21,7 @@ public class GameManagerTests
 
         //_initialState = ScriptableObject.CreateInstance<InitialState>(); // Create ScriptableObject
 
-        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
 
 
