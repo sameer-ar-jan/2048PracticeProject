@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638527305240000000
-    m_Hash: 3247032081
+      ticks: 638536965380000000
+    m_Hash: 3682471122
   m_LockFileStatus:
     m_FilePath: /Users/rodeorack/Documents/GitHub/2048PracticeProject/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638527305240000000
-    m_Hash: 1211423349
+      ticks: 638536965380000000
+    m_Hash: 4052814911
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -590,7 +590,7 @@ m_ResolvedPackages:
   - name: com.unity.profiling.core
     version: 1.0.2
   - name: com.unity.nuget.newtonsoft-json
-    version: 3.1.0
+    version: 3.2.1
   - name: com.unity.nuget.mono-cecil
     version: 1.11.4
   - name: com.unity.collections
@@ -642,12 +642,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.nuget.newtonsoft-json@3.1.0
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
   testable: 0
   isDirectDependency: 1
-  version: 3.1.0
+  version: 3.2.1
   source: 1
-  resolvedPath: /Users/rodeorack/Documents/GitHub/2048PracticeProject/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.1.0
+  resolvedPath: /Users/rodeorack/Documents/GitHub/2048PracticeProject/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1
   assetPath: Packages/com.unity.nuget.newtonsoft-json
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
@@ -704,13 +704,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638143166550000000
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-    revision: 686b43c15210b5f3e0145e51147079a8d2551bd9
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
     path: 
   unityLifecycle:
     version: 3.2.1
@@ -3454,6 +3454,12 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
     - 1.11.4
     compatible:
     - 1.11.4
@@ -3472,7 +3478,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637852971930000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3574,6 +3580,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.5
     - 2.4.0
     - 2.4.1
+    - 2.4.2
     compatible:
     - 1.2.4
     - 1.3.1
@@ -3595,7 +3602,8 @@ m_ResolvedPackages:
     - 2.4.0-pre.5
     - 2.4.0
     - 2.4.1
-    recommended: 2.4.1
+    - 2.4.2
+    recommended: 2.4.2
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -3764,6 +3772,7 @@ m_ResolvedPackages:
     - 7.0.12
     - 7.0.13
     - 7.1.0
+    - 7.1.1
     - 8.0.0-pre.3
     - 8.0.0-pre.4
     - 8.0.0

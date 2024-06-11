@@ -2,22 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class GameManager : MonoBehaviour
 {
     public TileBoard board;
     public CanvasGroup gameOver;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighScoreText;
-    private int score;
+
+    public int score;
+    private float gameOverAlpha;
+    private bool gameOverInteractable;
 
     private void Start()
     {
+        SetInitialState(0, 0f, false); // Example initial state call (adjust values as needed)
         NewGame();
     }
 
     public void NewGame()
     {
-        SetScore(0);
+        score = 0;
         HighScoreText.text = LoadHighScore().ToString();
 
         gameOver.alpha = 0f;
@@ -71,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         int highScore = LoadHighScore();
 
-        if(score > highScore)
+        if (score > highScore)
         {
             PlayerPrefs.SetInt("highScore", score);
         }
@@ -80,5 +85,13 @@ public class GameManager : MonoBehaviour
     private int LoadHighScore()
     {
         return PlayerPrefs.GetInt("highScore", 0);
+    }
+
+    public void SetInitialState(int initialScore, float gameOverAlpha, bool gameOverInteractable)
+    {
+        score = initialScore;
+        gameOver.alpha = gameOverAlpha;
+        gameOver.interactable = gameOverInteractable;
+       
     }
 }

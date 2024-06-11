@@ -79,8 +79,8 @@
     <Compile Include="Assets/AltTester/Runtime/Commands/FindObject/AltFindObjectCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/ObjectCommands/AltSetTextCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Communication/RuntimeCommunicationHandler.cs" />
-    <Compile Include="Assets/AltTester/Runtime/Commands/AltCommandWithWait.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/UnityCommands/AltGetAllLoadedScenesCommand.cs" />
+    <Compile Include="Assets/AltTester/Runtime/Commands/AltCommandWithWait.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/FindObject/PathSelector.cs" />
     <Compile Include="Assets/AltTester/Runtime/Communication/CommandHandler.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltPointerExitObjectCommand.cs" />
@@ -135,13 +135,13 @@
     <Compile Include="Assets/AltTester/Runtime/AltRunner.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltPointerUpFromObjectCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Communication/WebGLWebSocket.cs" />
-    <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltClickCoordinatesCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/FindObject/AltGetCurrentSceneCommand.cs" />
+    <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltClickCoordinatesCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltPressKeyboardKeysCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/ObjectCommands/AltGetAllMethodsCommand.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltMoveMouseCommand.cs" />
-    <Compile Include="Assets/AltTester/Runtime/AltScrollViewButtonController.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/UnityCommands/AltUnloadSceneCommand.cs" />
+    <Compile Include="Assets/AltTester/Runtime/AltScrollViewButtonController.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/UnityNotification/AltLoadSceneNotification.cs" />
     <Compile Include="Assets/AltTester/Runtime/Communication/IRuntimeWebSocketClient.cs" />
     <Compile Include="Assets/AltTester/Runtime/Commands/InputActions/AltKeysUpCommand.cs" />
