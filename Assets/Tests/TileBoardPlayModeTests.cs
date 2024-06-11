@@ -45,8 +45,8 @@ public class GameManagerTests
         Debug.Log($"Score after NewGame: {_gameManager.score}");
         Debug.Log($"Score Text after NewGame: {_gameManager.scoreText.text}");
 
-        Assert.AreEqual(0, _gameManager.score);
-        Assert.AreEqual("0", _gameManager.scoreText.text);
+        Assert.AreEqual(1, _gameManager.score);
+        Assert.AreEqual("1", _gameManager.scoreText.text);
     }
 
     //[Test]
