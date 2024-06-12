@@ -6,30 +6,56 @@ public class TileBoard : MonoBehaviour
 {
     public GameManager gamemanager;
 
-    private TileGrid grid;
+    public TileGrid grid;
     public TileState[] tileStates;
     public Tile tilePrefab;
     public List<Tile> tiles;
+    
     private bool waiting;
-
 
     private void Awake()
     {
         grid = GetComponentInChildren<TileGrid>();
-        tiles = new List<Tile>(16);
+        if (grid == null)
+        {
+            Debug.LogError("[Error] TileGrid component is missing.");
+        }
+        else
+        {
+            tiles = new List<Tile>();  // Initialize tiles list
+        }
     }
-   
 
     public void CreateTile()
     {
-        Tile tile = Instantiate(tilePrefab, grid.transform);
-        tile.SetState(tileStates[0],2);
+        if (grid == null)
+        {
+            Debug.LogError("[Error] TileGrid component is missing.");
+            return;
+        }
+
+        if (tilePrefab == null)
+        {
+            Debug.LogError("[Error] TilePrefab is not assigned.");
+            return;
+        }
+
+        // Example of creating a new tile in a specific cell
+        Tile tile = Instantiate(tilePrefab, grid.transform).GetComponent<Tile>();
+        tile.SetState(tileStates[0], 2);
         tile.Spawn(grid.GetRandomEmptyCell());
         tiles.Add(tile);
     }
+
     public void ClearBoard()
     {
-        foreach(var cell in grid.cells)
+        if (grid == null)
+        {
+            Debug.LogError("[Error] TileGrid component is missing.");
+            return;
+        }
+
+        foreach (var cell in grid.cells)
         {
             cell.tile = null;
         }
@@ -39,6 +65,7 @@ public class TileBoard : MonoBehaviour
         }
         tiles.Clear();
     }
+
     private void Update()
     {
         if (!waiting)

@@ -5,75 +5,83 @@ using UnityEngine;
 public class TileGrid : MonoBehaviour
 {
     public TileRow[] rows { get; private set; }
-    public TileCell[] cells { get; private set; }
+    public TileCell[] cells { get;  set; }
 
     public int size => cells.Length;
     public int height => rows.Length;
     public int width => size / height;
 
-
     private void Awake()
     {
         rows = GetComponentsInChildren<TileRow>();
-        cells = GetComponentsInChildren<TileCell>();
+        List<TileCell> cellList = new List<TileCell>();
+
+        foreach (TileRow row in rows)
+        {
+            foreach (TileCell cell in row.cells)
+            {
+                cellList.Add(cell);
+            }
+        }
+
+        cells = cellList.ToArray();
+
         Debug.Log("Number of cells: " + cells.Length);
         Debug.Log("Number of rows: " + rows.Length);
     }
+
     private void Start()
-        
     {
+        InitializeCellCoordinates();
+    }
 
-
+    private void InitializeCellCoordinates()
+    {
         for (int y = 0; y < rows.Length; y++)
         {
-            
             for (int x = 0; x < rows[y].cells.Length; x++)
             {
-                
                 rows[y].cells[x].coordinates = new Vector2Int(x, y);
-
             }
         }
     }
 
-    public TileCell GetCell(int x,int y)
+    public TileCell GetCell(int x, int y)
     {
         if (x >= 0 && x < width && y >= 0 && y < height)
         {
             return rows[y].cells[x];
         }
-        else return null;
-        
+        else
+        {
+            return null;
+        }
     }
+
     public TileCell GetAdjacentCell(TileCell cell, Vector2Int direction)
     {
-        Vector2Int coordinates = cell.coordinates;
-        coordinates.x += direction.x;
-        coordinates.y -= direction.y;
+        Vector2Int coordinates = cell.coordinates + direction;
         return GetCell(coordinates.x, coordinates.y);
     }
+
     public TileCell GetRandomEmptyCell()
     {
+        List<TileCell> emptyCells = new List<TileCell>();
 
-       
-        int index = Random.Range(0, cells.Length);
-        int startingIndex = index;
-
-        while (cells[index].occupied)
+        foreach (var cell in cells)
         {
-            index++;
-
-            if (index >= cells.Length)
+            if (!cell.occupied)
             {
-                index = 0;
-            }
-            if (index == startingIndex)
-            {
-                return null;
+                emptyCells.Add(cell);
             }
         }
-        return cells[index];
-    }
 
-    
+        if (emptyCells.Count == 0)
+        {
+            return null;
+        }
+
+        int index = Random.Range(0, emptyCells.Count);
+        return emptyCells[index];
+    }
 }
