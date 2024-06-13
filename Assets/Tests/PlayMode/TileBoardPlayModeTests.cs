@@ -88,7 +88,7 @@ public class GameManagerTests
         //yield return new WaitForSeconds(2f);
         // Check that the game over canvas group is shown
 
-        Assert.AreEqual(2f, gameOver.alpha);
+        Assert.AreEqual(1f, gameOver.alpha);
         Assert.IsTrue(gameOver.interactable);
 
        
