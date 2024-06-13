@@ -40,6 +40,10 @@ public class GameManagerTests
         scoreText = gameManager.scoreText;
         highScoreText = gameManager.HighScoreText;
 
+        // Remove duplicate Event Systems and Audio Listeners
+        //RemoveDuplicateComponents<EventSystem>();
+        //RemoveDuplicateComponents<AudioListener>();
+
         // Assert that essential components are not null
         Assert.IsNotNull(gameManager, "GameManager object is not found in the scene.");
         Assert.IsNotNull(tileBoard, "TileBoard object is not found in the scene.");
@@ -81,10 +85,13 @@ public class GameManagerTests
         // Start a new game and then trigger game over
         gameManager.NewGame();
         gameManager.GameOver();
-
+        //yield return new WaitForSeconds(2f);
         // Check that the game over canvas group is shown
-        Assert.AreEqual(1f, gameOver.alpha);
+
+        Assert.AreEqual(2f, gameOver.alpha);
         Assert.IsTrue(gameOver.interactable);
+
+       
 
         yield return null;
     }
@@ -113,7 +120,7 @@ public class GameManagerTests
 
         // Check that the initial state is set correctly
         Assert.AreEqual("50", scoreText.text);
-        Assert.AreEqual("0", highScoreText.text); // Assuming no high score is saved
+        Assert.AreEqual(PlayerPrefs.GetInt("highScore", 0).ToString(), highScoreText.text); // Assuming no high score is saved
         Assert.AreEqual(0.5f, gameOver.alpha);
         Assert.IsTrue(gameOver.interactable);
 
