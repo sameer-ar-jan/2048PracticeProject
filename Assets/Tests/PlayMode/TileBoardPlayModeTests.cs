@@ -85,7 +85,7 @@ public class GameManagerTests
         // Start a new game and then trigger game over
         gameManager.NewGame();
         gameManager.GameOver();
-        //yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2f);
         // Check that the game over canvas group is shown
 
         Assert.AreEqual(1f, gameOver.alpha);
