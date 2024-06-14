@@ -91,8 +91,6 @@ public class GameManagerTests
         Assert.AreEqual(1f, gameOver.alpha);
         Assert.IsTrue(gameOver.interactable);
 
-       
-
         yield return null;
     }
 

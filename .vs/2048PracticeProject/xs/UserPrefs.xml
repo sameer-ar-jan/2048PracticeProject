@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{8A7C9737-9D2D-6C72-55AA-401635082F45}|">
   <MonoDevelop.Ide.ItemProperties.AltTester.AltTesterUnitySDK PreferredExecutionTarget="4b858ffd-ba56-484f-b185-acc69e10f5d1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AltTester/Editor/Scripts/AltMyScenes.cs">
     <Files>
-      <File FileName="Assets/Scripts/TileBoard.cs" Line="20" Column="10" />
+      <File FileName="Assets/Scripts/TileBoard.cs" Line="46" Column="34" />
       <File FileName="Assets/Tests/Editor/TileBoardEditModeTests.cs" Line="1" Column="1" />
-      <File FileName="Assets/AltTester/Editor/MyFirstTest.cs" Line="30" Column="2" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="18" Column="1" />
-      <File FileName="Assets/Tests/PlayMode/TileBoardPlayModeTests.cs" Line="33" Column="55" />
-      <File FileName="Assets/Scripts/TileGrid.cs" Line="33" Column="25" />
-      <File FileName="Assets/Scripts/TileRow.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/TileCell.cs" Line="18" Column="1" />
-      <File FileName="Assets/Scripts/Tile.cs" Line="25" Column="30" />
+      <File FileName="Assets/AltTester/Editor/MyFirstTest.cs" Line="3" Column="28" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="15" Column="6" />
+      <File FileName="Assets/Tests/PlayMode/TileBoardPlayModeTests.cs" Line="94" Column="9" />
+      <File FileName="Assets/Scripts/TileGrid.cs" Line="19" Column="38" />
+      <File FileName="Assets/Scripts/TileRow.cs" Line="8" Column="24" />
+      <File FileName="Assets/Scripts/TileCell.cs" Line="10" Column="21" />
+      <File FileName="Assets/Scripts/Tile.cs" Line="27" Column="47" />
+      <File FileName="Assets/AltTester/Editor/Scripts/AltMyScenes.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,11 +19,13 @@
           <Node name="2048PracticeProject" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="AltTester" expanded="True">
-                <Node name="Editor" expanded="True" />
+                <Node name="Editor" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="AltMyScenes.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="Tile.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
               <Node name="Tests" expanded="True">
                 <Node name="Editor" expanded="True" />
                 <Node name="PlayMode" expanded="True" />

@@ -301,7 +301,7 @@
 -r:"Assets/AltTester/Runtime/3rdParty/nlog.4.7.9/netstandard2.0/NLog.dll"
 -r:"Assets/AltTester/Runtime/3rdParty/websocket-sharp/netstandard2.0/altwebsocket-sharp.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@3.1.0/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/AltTester.AltTesterUnitySDK.Driver.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.ref.dll"

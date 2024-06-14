@@ -1,9 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
-    AltTester.AltTesterUnitySDK.Editor.dll:
-    - AltTester.AltTesterUnitySDK.Editor.AltEditorConfiguration
-    - AltTester.AltTesterUnitySDK.Editor.AltTesterEditorWindow
-    Assembly-CSharp.dll:
+    MyScriptsAssembly.dll:
     - GameManager
     - SceneManagerScript
     - Tile
@@ -20,8 +17,6 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    Unity.2D.SpriteShape.Runtime.dll:
-    - UnityEngine.U2D.SpriteShapeDefaultCreator
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -52,8 +47,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -103,16 +96,27 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
+    UnityEngine.UIElementsModule:
+    - UnityEngine.UIElements.DynamicAtlasSettings
+    - UnityEngine.UIElements.StyleComplexSelector
+    - UnityEngine.UIElements.StyleProperty
+    - UnityEngine.UIElements.StyleRule
+    - UnityEngine.UIElements.StyleSelector
+    - UnityEngine.UIElements.StyleSelectorPart
+    - UnityEngine.UIElements.StyleSheet/ImportStruct
+    - UnityEngine.UIElements.StyleSheets.Dimension
+    - UnityEngine.UIElements.StyleSheets.ScalableImage
+    - UnityEngine.UIElements.StyleValueHandle
   methodsToPreserve:
-  - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: NewGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: NewGame
-  - assembly: Assembly-CSharp
+  - assembly: MyScriptsAssembly
     fullTypeName: SceneManagerScript
     methodName: LoadScene
+  - assembly: MyScriptsAssembly
+    fullTypeName: GameManager
+    methodName: NewGame
+  - assembly: MyScriptsAssembly
+    fullTypeName: GameManager
+    methodName: NewGame
   sceneClasses:
     Assets/Scenes/2048.unity:
     - Class: 1
@@ -127,50 +131,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16718}
+      Script: {instanceID: 16678}
     - Class: 114
-      Script: {instanceID: 17440}
+      Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 17988}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 18250}
+      Script: {instanceID: 18476}
     - Class: 114
-      Script: {instanceID: 18552}
+      Script: {instanceID: 18838}
     - Class: 114
-      Script: {instanceID: 18602}
+      Script: {instanceID: 18892}
     - Class: 114
-      Script: {instanceID: 18956}
+      Script: {instanceID: 19318}
     - Class: 114
-      Script: {instanceID: 19876}
+      Script: {instanceID: 20582}
     - Class: 114
-      Script: {instanceID: 20042}
+      Script: {instanceID: 20730}
     - Class: 114
-      Script: {instanceID: 20172}
+      Script: {instanceID: 21858}
     - Class: 114
-      Script: {instanceID: 20200}
+      Script: {instanceID: 22880}
     - Class: 114
-      Script: {instanceID: 21118}
+      Script: {instanceID: 23352}
     - Class: 114
-      Script: {instanceID: 21818}
+      Script: {instanceID: 23958}
     - Class: 114
-      Script: {instanceID: 22032}
+      Script: {instanceID: 24208}
     - Class: 114
-      Script: {instanceID: 22438}
+      Script: {instanceID: 24358}
     - Class: 114
-      Script: {instanceID: 22960}
-    - Class: 114
-      Script: {instanceID: 23180}
-    - Class: 114
-      Script: {instanceID: 23298}
-    - Class: 114
-      Script: {instanceID: 23794}
+      Script: {instanceID: 24930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,28 +198,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16718}
+      Script: {instanceID: 642}
     - Class: 114
-      Script: {instanceID: 17988}
+      Script: {instanceID: 644}
     - Class: 114
-      Script: {instanceID: 18250}
+      Script: {instanceID: 666}
     - Class: 114
-      Script: {instanceID: 18602}
+      Script: {instanceID: 16678}
     - Class: 114
-      Script: {instanceID: 21118}
+      Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 21818}
+      Script: {instanceID: 17562}
     - Class: 114
-      Script: {instanceID: 22032}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 22438}
+      Script: {instanceID: 18476}
     - Class: 114
-      Script: {instanceID: 29050}
+      Script: {instanceID: 18892}
+    - Class: 114
+      Script: {instanceID: 20392}
+    - Class: 114
+      Script: {instanceID: 20766}
+    - Class: 114
+      Script: {instanceID: 21858}
+    - Class: 114
+      Script: {instanceID: 22510}
+    - Class: 114
+      Script: {instanceID: 22880}
+    - Class: 114
+      Script: {instanceID: 23352}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,16 +253,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 55060a7bf226ac385ce19ebd450f199f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UIElements
-    className: PanelRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: dd9dda1dfd39e605c49e72003342ef5d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 55060a7bf226ac385ce19ebd450f199f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
   - hash:
       serializedVersion: 2
       Hash: d75df0b83c74ab3d9088964ef8188507
@@ -393,16 +409,16 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: ada873da50974d1e7ce247ffb296b0f3
-    assemblyName: Unity.VisualScripting.Core
-    namespaceName: Unity.VisualScripting
-    className: UnityOnCollisionEnterMessageListener
-  - hash:
-      serializedVersion: 2
       Hash: 04b6685b6f724c0d6024e6b6f96c8202
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: ada873da50974d1e7ce247ffb296b0f3
+    assemblyName: Unity.VisualScripting.Core
+    namespaceName: Unity.VisualScripting
+    className: UnityOnCollisionEnterMessageListener
   - hash:
       serializedVersion: 2
       Hash: 7e12302f66e3c8ed5bcfea4ce65fccea
@@ -415,6 +431,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
     className: RuleOverrideTile
+  - hash:
+      serializedVersion: 2
+      Hash: a0e0bc431a5a05794fcf44452b3eb06a
+    assemblyName: Unity.Multiplayer.Tools.NetStatsMonitor.Configuration
+    namespaceName: Unity.Multiplayer.Tools.NetStatsMonitor
+    className: NetStatsMonitorConfiguration
   - hash:
       serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
@@ -483,8 +505,14 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b0c3baa2b86c1f07349fd87ddd87bb28
-    assemblyName: Assembly-CSharp
+      Hash: e9326534a2152d618a447fb6b2e4e247
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK
+    className: AltId
+  - hash:
+      serializedVersion: 2
+      Hash: aa4b99d13ede7ba5e9a74993db8d5c06
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: TileState
   - hash:
@@ -561,8 +589,8 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: fa4fdefd33a4816dcfd59deba1997ad3
-    assemblyName: Assembly-CSharp
+      Hash: 6501b114b0ef48a4d088e04d46115a26
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: TileRow
   - hash:
@@ -577,6 +605,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 3193e9e97f4c83887e4aeb7b52858b89
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: 
+    className: AltScrollViewButtonController
   - hash:
       serializedVersion: 2
       Hash: e6f8333cc8a800e2866870a5ef7efc35
@@ -627,6 +661,24 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 89e4e2e8eaed872597aba26ae7c844ee
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK.UI
+    className: AltDialog
+  - hash:
+      serializedVersion: 2
+      Hash: a1f04f96339251602f4fd83c27c42293
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK.UI
+    className: AltPrefabDrag
+  - hash:
+      serializedVersion: 2
+      Hash: 37e6b52659f054b60d910fc7d027304a
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK.InputModule
+    className: Input
+  - hash:
+      serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -669,10 +721,22 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: de0d2f224f4e70d62ab5fd726345b589
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK
+    className: AltRunner
+  - hash:
+      serializedVersion: 2
       Hash: 042785b832afb73fd0585521aa7baf43
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: cc5928d890d9cab453e819fd03e1a089
+    assemblyName: Unity.Multiplayer.Tools.NetStatsMonitor.Component
+    namespaceName: Unity.Multiplayer.Tools.NetStatsMonitor
+    className: CustomTestDataGenerator
   - hash:
       serializedVersion: 2
       Hash: 1a680d9a08de79b0d2c779e78c9843b4
@@ -699,8 +763,8 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
-      Hash: 057b0a836628ccd063ce1f866a6cb1bc
-    assemblyName: Assembly-CSharp
+      Hash: e7a293bd5fcd97c451c1f2811e7b8f99
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: TileBoard
   - hash:
@@ -711,8 +775,8 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 174067d99af510703383f99b00703651
-    assemblyName: Assembly-CSharp
+      Hash: 08a2a765a356c66496ddad6b6a51a452
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: Tile
   - hash:
@@ -825,6 +889,12 @@ ScriptsOnlyBuild:
     className: CCDSolver2D
   - hash:
       serializedVersion: 2
+      Hash: 374e236dcf4ac8d7b05fef615ccacdab
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK
+    className: AltMockUpPointerInputModule
+  - hash:
+      serializedVersion: 2
       Hash: 522f6865b4ec12522e602206785309f8
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -859,6 +929,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 0a57a93a2cc15db4d96d1036c9295e04
+    assemblyName: Unity.Multiplayer.Tools.NetStatsMonitor.Component
+    namespaceName: Unity.Multiplayer.Tools.NetStatsMonitor
+    className: RuntimeNetStatsMonitor
   - hash:
       serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
@@ -903,10 +979,10 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 540882762544409cc4530e60db00e951
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
+      Hash: 84f0357a3e72b015394ad1fd6703035c
+    assemblyName: MyScriptsAssembly
+    namespaceName: 
+    className: SceneManagerScript
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -925,6 +1001,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: bc54a8bcf696714bde758dd3ab3eed97
+    assemblyName: AltTester.AltTesterUnitySDK
+    namespaceName: AltTester.AltTesterUnitySDK
+    className: NewInputSystem
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -985,6 +1067,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 80a2955145307e9cb4a4c2ffdc1a16a5
+    assemblyName: Unity.Multiplayer.Tools.NetStatsReporting
+    namespaceName: Unity.Multiplayer.Tools.NetStatsReporting
+    className: TestDataGeneratorComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 369d7cfa7c9fce2891744eab344344b2
+    assemblyName: MyScriptsAssembly
+    namespaceName: 
+    className: InitialState
   - hash:
       serializedVersion: 2
       Hash: a119221a1c3d590645a52df2cbebb41c
@@ -1065,8 +1159,8 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 9fe5ba19a3b69aeabf27d3dd3e9f1916
-    assemblyName: Assembly-CSharp
+      Hash: 994f32a880210b10d61cb92374beea59
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: GameManager
   - hash:
@@ -1089,8 +1183,8 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: fe973294a4dfc167aefc7a76d0e499a8
-    assemblyName: Assembly-CSharp
+      Hash: 9bb7803cb562786d41f8f30ef3d6cf4f
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: TileGrid
   - hash:
@@ -1161,8 +1255,8 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 6be86cb684588c149cf89db63238d9dc
-    assemblyName: Assembly-CSharp
+      Hash: bbf5b8d6371e902bd91d00fef0be7a7b
+    assemblyName: MyScriptsAssembly
     namespaceName: 
     className: TileCell
   - hash:
@@ -1201,6 +1295,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: b55e4d744578b5b9d59d03bb89f89039
+    assemblyName: Unity.Multiplayer.Tools.MetricTestData
+    namespaceName: Unity.Multiplayer.Tools.MetricTestData
+    className: TestDataGeneratorComponent
   - hash:
       serializedVersion: 2
       Hash: 568292fb7ea6c4f7a667e5ff76bc7e85
@@ -1267,62 +1367,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 37e6b52659f054b60d910fc7d027304a
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK.InputModule
-    className: Input
-  - hash:
-      serializedVersion: 2
-      Hash: a1f04f96339251602f4fd83c27c42293
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK.UI
-    className: AltPrefabDrag
-  - hash:
-      serializedVersion: 2
-      Hash: de0d2f224f4e70d62ab5fd726345b589
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK
-    className: AltRunner
-  - hash:
-      serializedVersion: 2
-      Hash: bc54a8bcf696714bde758dd3ab3eed97
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK
-    className: NewInputSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 3193e9e97f4c83887e4aeb7b52858b89
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: 
-    className: AltScrollViewButtonController
-  - hash:
-      serializedVersion: 2
-      Hash: 374e236dcf4ac8d7b05fef615ccacdab
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK
-    className: AltMockUpPointerInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: e9326534a2152d618a447fb6b2e4e247
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK
-    className: AltId
-  - hash:
-      serializedVersion: 2
-      Hash: 89e4e2e8eaed872597aba26ae7c844ee
-    assemblyName: AltTester.AltTesterUnitySDK
-    namespaceName: AltTester.AltTesterUnitySDK.UI
-    className: AltDialog
-  - hash:
-      serializedVersion: 2
-      Hash: a8ce5170be76ec544d7085d3a985a435
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SceneManagerScript
   platform: 13
   scenePathNames:
-  - Assets/Scenes/2048.unity
   - Assets/Scenes/MainMenu.unity
-  playerPath: /Users/rodeorack/Documents/GitHub/2048PracticeProject/ok.apk
+  - Assets/Scenes/2048.unity
+  playerPath: /Users/rodeorack/Documents/GitHub/2048PracticeProject/2048-build.apk
