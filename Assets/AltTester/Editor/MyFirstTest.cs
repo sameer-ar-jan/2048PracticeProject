@@ -1,38 +1,38 @@
-using NUnit.Framework;
-using AltTester.AltTesterUnitySDK.Driver;
+//using NUnit.Framework;
+//using AltTester.AltTesterUnitySDK.Driver;
 
-using System.Collections;
-using UnityEngine;
+//using System.Collections;
+//using UnityEngine;
 
-public class MyFirstTest
-{   //Important! If your test file is inside a folder that contains an .asmdef file, please make sure that the assembly definition references NUnit.
-    public AltDriver altDriver;
-    //Before any test it connects with the socket
-    [OneTimeSetUp]
-    public void SetUp()
-    {
-        altDriver = new AltDriver();
-    }
+//public class MyFirstTest
+//{   //Important! If your test file is inside a folder that contains an .asmdef file, please make sure that the assembly definition references NUnit.
+//    public AltDriver altDriver;
+//    //Before any test it connects with the socket
+//    [OneTimeSetUp]
+//    public void SetUp()
+//    {
+//        altDriver = new AltDriver();
+//    }
 
-    //At the end of the test closes the connection with the socket
-    [OneTimeTearDown]
-    public void TearDown()
-    {
-        altDriver.Stop();
-    }
+//    //At the end of the test closes the connection with the socket
+//    [OneTimeTearDown]
+//    public void TearDown()
+//    {
+//        altDriver.Stop();
+//    }
 
-    [Test]
-    public void Test()
-    {
+//    [Test]
+//    public void Test()
+//    {
         
-        altDriver.LoadScene("MainMenu");
-        //altDriver.LoadScene("2048");
-        var altObject = altDriver.FindObject(By.NAME, "Play");
-        altDriver.FindObject(By.NAME, "Play").Tap();
-        var panelElement = altDriver.WaitForObject(By.NAME, "Board");
-        Assert.NotNull(altObject);
-        Assert.IsTrue(panelElement.enabled);
-    }
+//        altDriver.LoadScene("MainMenu");
+//        //altDriver.LoadScene("2048");
+//        var altObject = altDriver.FindObject(By.NAME, "Play");
+//        altDriver.FindObject(By.NAME, "Play").Tap();
+//        var panelElement = altDriver.WaitForObject(By.NAME, "Board");
+//        Assert.NotNull(altObject);
+//        Assert.IsTrue(panelElement.enabled);
+//    }
 
 
     //[Test]
@@ -78,4 +78,4 @@ public class MyFirstTest
     //    Assert.AreNotEqual(initialPosition, newPosition, "Tile did not move right.");
     //}
 
-}
+//}

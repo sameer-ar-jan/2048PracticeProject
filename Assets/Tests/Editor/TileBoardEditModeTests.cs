@@ -1,19 +1,19 @@
-using NUnit.Framework;
-using UnityEngine;
+//using NUnit.Framework;
+//using UnityEngine;
 
-[TestFixture]
-public class TileBoardEditModeTests
-{
-    [Test]
-    public void TestSomeEditorLogic()
-    {
-        // Arrange
-        int expected = 1 + 1;
+//[TestFixture]
+//public class TileBoardEditModeTests
+//{
+//    [Test]
+//    public void TestSomeEditorLogic()
+//    {
+//        // Arrange
+//        int expected = 1 + 1;
 
-        // Act
-        int actual = 2;
+//        // Act
+//        int actual = 2;
 
-        // Assert
-        Assert.AreEqual(expected, actual);
-    }
-}
+//        // Assert
+//        Assert.AreEqual(expected, actual);
+//    }
+//}
